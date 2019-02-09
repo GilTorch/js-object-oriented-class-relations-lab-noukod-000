@@ -13,6 +13,10 @@ class Driver{
     return store.trips.filter((trip)=>trip.driverId===this.id);
   }
 
+  passengers(){
+    return trips().map((trip)=>trip.passenger());
+  }
+
 }
 
 let passengerId=0;
