@@ -9,6 +9,10 @@ class Driver{
     store.drivers.push(this);
   }
 
+  trips(){
+    return store.trips.filter((trip)=>trip.driverId===this.id);
+  }
+
 }
 
 let passengerId=0;
