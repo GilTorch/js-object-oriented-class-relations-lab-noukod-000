@@ -31,7 +31,7 @@ class Passenger{
   trips(){
     return store.trips.filter((trip)=>trip.driverId===this.id);
   }
-  
+
 }
 
 let tripId=0;
